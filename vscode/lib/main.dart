@@ -97,6 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(
                   height: 30,
                 ),
+                //  todo: переделать строку с колонками на строку с виджетами кнопок
+                //  todo: попробовать реализовать функции Позвонить,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
