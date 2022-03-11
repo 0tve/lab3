@@ -1,3 +1,6 @@
+import 'dart:html';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -101,13 +104,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
-                      children: const [
-                        Icon(
-                          Icons.call,
-                          color: Colors.green,
-                        ),
-                        SizedBox(height: 10),
-                        Text(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            
+                          },
+                          color:Colors.green,
+                          icon: const Icon(Icons.call)),
+                        const Text(
                           'ПОЗВОНИТЬ',
                           style: TextStyle(
                             color: Colors.green,
@@ -116,13 +120,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     Column(
-                      children: const [
-                        Icon(
-                          Icons.near_me,
-                          color: Colors.green,
-                        ),
-                        SizedBox(height: 10),
-                        Text(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            
+                          },
+                          color:Colors.green,
+                          icon: const Icon(Icons.near_me)),
+                        const Text(
                           'МАРШРУТ',
                           style: TextStyle(
                             color: Colors.green,
@@ -131,13 +136,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     Column(
-                      children: const [
-                        Icon(
-                          Icons.share,
-                          color: Colors.green,
-                        ),
-                        SizedBox(height: 10),
-                        Text(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            
+                          },
+                          color:Colors.green,
+                          icon: const Icon(Icons.share)),
+                        const Text(
                           'ПОДЕЛИТЬСЯ',
                           style: TextStyle(
                             color: Colors.green,
